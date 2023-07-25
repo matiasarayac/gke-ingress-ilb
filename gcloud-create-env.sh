@@ -13,7 +13,7 @@ gcloud compute firewall-rules create allow-proxy-connection \
     --network=vpc-composer
 
 # Creating a cluster
-# Change network as needed
+# Note that you should set the subnetwork here
 gcloud container clusters create-auto gke-cluster-demo \
     --region=us-central1 \
-    --network=vpc-composer
+    --network=subnet-composer

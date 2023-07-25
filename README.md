@@ -4,7 +4,11 @@
 This repository contains the steps and files to create a GKE cluster with an internal ingress load balancer based on the official [Google Cloud documentation](https://cloud.google.com/kubernetes-engine/docs/how-to/internal-load-balance-ingress). The intent is not to explain any commands, but simply to create the environment and deploy a sample application.
 
 ### 1. Create environment (proxy-only subnet, firewall rule and GKE cluster)
-
+Make sure you are pointing to the right project
+```
+gcloud config set project PROJECT_ID
+```
+Then run the sh file with the gcloud commands
 ```
 sh gcloud-create-env.sh
 ```

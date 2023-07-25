@@ -8,7 +8,7 @@ gcloud compute networks subnets create proxy-only-subnet \
 
 # Create a firewall rule
 gcloud compute firewall-rules create allow-proxy-connection \
-    --allow=TCP:CONTAINER_PORT \
+    --allow=TCP:9376 \
     --source-ranges=10.129.0.0/23 \
     --network=vpc-composer
 

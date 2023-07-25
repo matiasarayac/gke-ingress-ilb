@@ -1,1 +1,1 @@
-# gke-ingress-ilb
+# Configuring Ingress for internal Application Load Balancers

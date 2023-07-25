@@ -14,4 +14,6 @@ gcloud compute firewall-rules create allow-proxy-connection \
 
 # Creating a cluster
 gcloud container clusters create-auto gke-cluster-demo \
-    --region us-central1
+    --region us-central1 \
+    --subnetwork subnet-composer \
+    --default-max-pods-per-node=110

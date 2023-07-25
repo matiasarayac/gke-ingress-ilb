@@ -16,3 +16,4 @@ gcloud compute firewall-rules create allow-proxy-connection \
 gcloud container clusters create-auto gke-cluster-demo \
     --region us-central1 \
     --subnetwork subnet-composer
+    --network vpc-composer

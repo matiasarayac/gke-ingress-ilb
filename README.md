@@ -38,8 +38,8 @@ ilb-demo-ingress   *        10.128.0.58        80        59s
 gcloud compute instances create l7-ilb-client-us-central1-a \
     --image-family=debian-10 \
     --image-project=debian-cloud \
-    --network=default \
-    --subnet=default \
+    --network=vpc-composer \
+    --subnet=subnet-composer \
     --zone=us-central1-a \
     --tags=allow-ssh
 ```
